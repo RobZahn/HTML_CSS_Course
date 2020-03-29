@@ -38,6 +38,16 @@ p {
 	text-align: center;
 }
 
+.bg-light {
+	background: #f4f4f4;
+	color: #333;
+}
+
+.bg-dark {
+	background: #333;
+	color: #fff;
+}
+
 .large-heading {
 	font-size: 4rem;
 	margin-bottom: 0.75rem;
@@ -56,14 +66,26 @@ p {
 }
 
 .pady-1 {
-	padding: 1.5rem;
+	padding: 1.5rem 0;
 }
 
 .pady-2 {
-	padding: 2rem;
+	padding: 2rem 0;
 }
 
 .pady-3 {
+	padding: 3rem 0;
+}
+
+.pad-1 {
+	padding: 1.5rem;
+}
+
+.pad-2 {
+	padding: 2rem;
+}
+
+.pad-3 {
 	padding: 3rem;
 }
 
@@ -85,6 +107,17 @@ p {
 	background: #333;
 	color: #fff;
 }
+
+.list {
+	margin: 0.5rem 0;
+	list-style: none;
+}
+
+.list li {
+	padding: 0.5rem 0;
+	border-bottom: 1px dotted #444;
+}
+
 /* Navbar */
 
 #navbar {
@@ -157,4 +190,21 @@ p {
 	padding: 1rem;
 	border-radius: 50%;
 	margin-bottom: 1rem;
+}
+
+/* Section: Who We Are */
+#who {
+	display: flex;
+}
+
+#who div {
+	flex: 1;
+}
+
+#who .who-img {
+	background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+#who .who-text h3 {
+	margin-top: 1.5rem;
 }
