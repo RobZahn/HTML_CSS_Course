@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Roboto&display=swap';
 
 /* General */
 
@@ -45,6 +45,11 @@ p {
 
 .bg-dark {
 	background: #333;
+	color: #fff;
+}
+
+.bg-primary {
+	background: #93cb52;
 	color: #fff;
 }
 
@@ -193,6 +198,7 @@ p {
 }
 
 /* Section: Who We Are */
+
 #who {
 	display: flex;
 }
@@ -207,4 +213,41 @@ p {
 
 #who .who-text h3 {
 	margin-top: 1.5rem;
+}
+
+/* Section: Clients */
+
+#clients .items {
+	display: flex;
+}
+
+#clients .items img {
+	display: block;
+	margin: auto;
+	width: 60%;
+}
+
+/* Section: Contact */
+
+#contact {
+	display: flex;
+}
+
+#contact .map,
+#contact .contact-form {
+	flex: 1;
+}
+
+#contact .contact-form .form-group {
+	margin: 0.75rem;
+}
+
+#contact .contact-form label {
+	display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+	width: 100%;
+	padding: 0.5rem;
 }
