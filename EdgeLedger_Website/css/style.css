@@ -30,12 +30,12 @@ p {
 	overflow: hidden;
 }
 
-.text-primary {
-	color: #93cb52;
-}
-
 .text-center {
 	text-align: center;
+}
+
+.text-primary {
+	color: #93cb52;
 }
 
 .bg-light {
@@ -134,6 +134,10 @@ p {
 	justify-content: space-between;
 	z-index: 1;
 	padding: 1rem;
+}
+
+#navbar .logo {
+	cursor: default;
 }
 
 #navbar ul {
