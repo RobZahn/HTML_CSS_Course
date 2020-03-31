@@ -49,3 +49,26 @@ body {
 	text-align: center;
 	height: 100%;
 }
+
+#showcase h1 {
+	font-size: 4rem;
+}
+
+#showcase p {
+	font-size: 1.3rem;
+}
+
+.btn {
+	display: inline-block;
+	border: none;
+	text-decoration: none;
+	background: var(--primary-color);
+	color: #fff;
+	padding: 0.75rem 1.5rem;
+	margin-top: 1rem;
+	transition: all 1s ease-in-out;
+}
+
+.btn:hover {
+	opacity: 0.75;
+}
