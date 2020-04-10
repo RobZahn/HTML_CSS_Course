@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Rows</title>
+  <style>
+    /* All rows have an implicit size. grid-auto-rows will set any rows that are not specifically given a size */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 2fr 3fr 4fr;
+      grid-auto-rows: 3fr;
+    }
+
+    .item {
+      padding: 3rem;
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+</body>
+</html>
