@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Columns</title>
+  <style>
+    /* The auto parameter forces the specified column to take up all of the remaining horizontal space on the page. */
+
+    /* fr units refer to a fraction of the page */
+
+    .grid {
+      display: grid;
+      /* grid-template-columns: 200px auto 200px; */
+      /* grid-template-columns: auto auto auto; */
+      /* grid-template-columns: repeat(3, auto); */
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .item {
+      padding: 3rem;
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    main section {
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+      padding: 3rem;
+    }
+
+    main aside {
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+      padding: 2rem;
+    }
+
+    hr {
+      border: 1px dashed orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+
+  <hr>
+
+  <main>
+    <section>
+      <h3>Welcome To My Site</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quod nulla sapiente omnis exercitationem deleniti inventore minima. Pariatur, molestiae sint explicabo illum distinctio saepe atque vel, ratione nesciunt at unde!</p>
+    </section>
+
+    <aside>
+      <h3>Hello</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, consequuntur!</p>
+    </aside>
+  </main>
+</body>
+</html>
