@@ -1,3 +1,8 @@
+:root {
+	--primary-color: coral;
+	--secondary-color: chocolate;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -78,5 +83,32 @@ body {
 }
 
 #navbar ul li:hover ul li:hover span {
-	background: chocolate;
+	background: var(--secondary-color);
+}
+
+#showcase {
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0 2rem;
+	background: var(--primary-color);
+}
+
+#showcase h1 {
+	color: #fff;
+	font-size: 4rem;
+}
+
+@media (max-width: 600px) {
+	#navbar ul li {
+		display: block;
+	}
+
+	#navbar ul li:hover ul {
+		width: 100%;
+		position: relative;
+	}
 }
