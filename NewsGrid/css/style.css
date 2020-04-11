@@ -82,9 +82,32 @@ h6 {
 .btn {
 	display: inline-block;
 	border: none;
+	border-radius: 3px;
 	background: var(--dark-color);
 	color: #fff;
 	padding: 0.5rem 1.5rem;
+}
+
+.btn-light {
+	background: var(--light-color);
+}
+
+.btn-primary {
+	background: var(--primary-color);
+}
+
+.btn-secondary {
+	background: var(--secondary-color);
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+	text-align: center;
 }
 
 /* Navigation */
