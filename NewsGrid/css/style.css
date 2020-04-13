@@ -275,3 +275,5 @@ h6 {
 #home-articles .articles-container > *:last-child {
 	grid-column: 2 / span 2;
 }
+
+/* Footer */
