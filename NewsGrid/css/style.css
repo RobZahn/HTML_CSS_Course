@@ -174,10 +174,15 @@ h6 {
 	padding: 3rem;
 }
 
+.l-heading {
+	font-size: 3rem;
+}
+
 .list li {
 	padding: 0.5rem 0;
 	border-bottom: 1px solid #555;
 	width: 90%;
+	font-family: ;
 }
 
 /* Inner page grid container */
