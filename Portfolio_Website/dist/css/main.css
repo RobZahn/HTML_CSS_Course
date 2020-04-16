@@ -183,4 +183,36 @@ img {
   color: #ffbc00;
   padding-bottom: 0.5rem;
 }
+
+#home-b .stats {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+#home-b .stats li {
+  line-height: 2;
+}
+
+#home-b .stats li.stats-title {
+  font-size: 1.5rem;
+}
+
+#home-b .stats li.stats-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#home-b .stats div {
+  padding: 3rem 0;
+}
+
+#home-b .stats div:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+#home-b .stats div:nth-child(even) {
+  background-color: #ccc;
+}
 /*# sourceMappingURL=main.css.map */
