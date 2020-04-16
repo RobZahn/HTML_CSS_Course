@@ -28,7 +28,7 @@
 }
 
 .btn-dark {
-  color: #333;
+  color: #fff;
   background-color: #333;
 }
 
@@ -536,6 +536,54 @@ img {
   height: 50px;
   border-radius: 50%;
   margin-right: 0.5rem;
+}
+
+#contact-a .text-fields {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "name email" "subject phone" "message message";
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+#contact-a .text-fields .name-input {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+
+#contact-a .text-fields .subject-input {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: subject;
+}
+
+#contact-a .text-fields .email-input {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: email;
+}
+
+#contact-a .text-fields .phone-input {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: phone;
+}
+
+#contact-a .text-fields .message-input {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: message;
+  height: 100px;
+}
+
+#contact-a .text-fields .text-input {
+  padding: 0.5rem 1rem;
+}
+
+#contact-a button[type="submit"] {
+  width: 50%;
 }
 
 #main-footer {
