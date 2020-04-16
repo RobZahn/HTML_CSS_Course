@@ -116,6 +116,45 @@ input[class^="btn-"]:hover {
   margin: 0.5rem auto 0.5rem auto;
 }
 
+.items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  grid-gap: 0.1rem;
+}
+
+.item {
+  position: relative;
+  background: #ffbc00;
+  overflow: hidden;
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: inherit;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+          transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+  -webkit-transition: -webkit-transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+  transition: -webkit-transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+  transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+  transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1), -webkit-transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.item:hover:after {
+  -webkit-transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+          transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+}
+
 * {
   margin: 0;
   padding: 0;
