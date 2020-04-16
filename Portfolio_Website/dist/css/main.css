@@ -47,6 +47,26 @@ input[class^="btn-"]:hover {
   text-align: center;
 }
 
+.bg-main {
+  background: #ffbc00;
+  color: #fff;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000;
+}
+
+.bg-medium {
+  background: #ccc;
+  color: #000;
+}
+
 .py-1 {
   padding: 1rem 0;
 }
@@ -185,6 +205,12 @@ img {
 #header-home .header-content h1 {
   font-size: 4rem;
   line-height: 1.2;
+}
+
+#header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 2px solid #ffbc00;
 }
 
 #home-a .specials {
