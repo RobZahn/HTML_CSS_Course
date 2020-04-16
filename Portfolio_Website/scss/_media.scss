@@ -41,6 +41,7 @@
   #home-b .stats,
   #home-c .process,
   #about-d .testimonials,
+  #contact-b .contact-info,
   .items {
     grid-template-columns: 1fr;
   }
@@ -107,6 +108,21 @@
           "message";
       }
     }
+
+    &-b {
+      .contact-info div:first-child,
+      .contact-info div:nth-child(2) {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #555;
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
   }
 
   // Footer
@@ -120,6 +136,26 @@
 
       p {
         font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+// Landscape
+@media (max-height: 580px) {
+  #header-home {
+    .header-content {
+      padding-top: 3rem;
+    }
+  }
+}
+
+// iPhone5 Landscape
+@media (max-height: 330px) {
+  #header-home {
+    .header-content {
+      h1 {
+        font-size: 2rem;
       }
     }
   }

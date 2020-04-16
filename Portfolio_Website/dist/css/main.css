@@ -594,11 +594,6 @@ img {
   text-align: center;
 }
 
-#contact-b .contact-info div:nth-child(1),
-#contact-b .contact-info div:nth-child(2) {
-  border-right: 1px solid #ccc;
-}
-
 #contact-c h1 {
   font-size: 4rem;
 }
@@ -677,6 +672,7 @@ img {
   #home-b .stats,
   #home-c .process,
   #about-d .testimonials,
+  #contact-b .contact-info,
   .items {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -707,6 +703,15 @@ img {
   #contact-a .text-fields {
         grid-template-areas: "name" "subject" "email" "phone" "message";
   }
+  #contact-b .contact-info div:first-child,
+  #contact-b .contact-info div:nth-child(2) {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #555;
+  }
+  #contact-c h1 {
+    font-size: 2rem;
+  }
   #main-footer {
     height: 7rem;
   }
@@ -720,6 +725,18 @@ img {
   }
   #main-footer .footer-content p {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-height: 580px) {
+  #header-home .header-content {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-height: 330px) {
+  #header-home .header-content h1 {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
