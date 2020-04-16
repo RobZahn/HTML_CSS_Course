@@ -45,6 +45,8 @@
     grid-template-columns: 1fr;
   }
 
+  // Home
+
   #home {
     &-a {
       .specials div {
@@ -61,6 +63,63 @@
     &-b {
       .stats div {
         padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  // About
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bioImage"
+          "bio"
+          "aw1"
+          "aw2"
+          "aw3";
+      }
+
+      .lead {
+        font-size: 1rem;
+      }
+    }
+
+    &-c {
+      display: none;
+    }
+
+    &-d {
+      .lead {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  // Contact
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+
+      p {
+        font-size: 0.8rem;
       }
     }
   }

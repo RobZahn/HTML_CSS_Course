@@ -506,7 +506,7 @@ img {
   width: 70%;
 }
 
-#about-d .testiomials {
+#about-d .testimonials {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -514,7 +514,7 @@ img {
   grid-gap: 0.5rem;
 }
 
-#about-d .testiomials ul {
+#about-d .testimonials ul {
   list-style: none;
   margin-top: 1rem;
   display: -webkit-box;
@@ -525,13 +525,13 @@ img {
           align-items: center;
 }
 
-#about-d .testiomials p {
+#about-d .testimonials p {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 0.5rem;
 }
 
-#about-d .testiomials img {
+#about-d .testimonials img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -691,6 +691,35 @@ img {
   }
   #home-b .stats div {
     padding: 2rem 0 1rem 0;
+  }
+  #about-a .about-info {
+        grid-template-areas: "bioImage" "bio" "aw1" "aw2" "aw3";
+  }
+  #about-a .lead {
+    font-size: 1rem;
+  }
+  #about-c {
+    display: none;
+  }
+  #about-d .lead {
+    font-size: 1rem;
+  }
+  #contact-a .text-fields {
+        grid-template-areas: "name" "subject" "email" "phone" "message";
+  }
+  #main-footer {
+    height: 7rem;
+  }
+  #main-footer .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+    height: 5rem;
+  }
+  #main-footer .footer-content p {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
