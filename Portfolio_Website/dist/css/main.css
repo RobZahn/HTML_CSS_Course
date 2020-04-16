@@ -270,4 +270,15 @@ img {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
+
+#home-c .process-icon:hover {
+  background: #ffbc00;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+}
+
+#home-c .process-icon:hover .process-step {
+  background: #333;
+}
 /*# sourceMappingURL=main.css.map */
