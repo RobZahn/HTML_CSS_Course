@@ -169,6 +169,7 @@ img {
         right: 0;
         font-size: 28px;
         background: $main-color;
+        color: set-text-color($main-color);
         border-radius: 50%;
         height: 15px;
         width: 15px;
@@ -181,7 +182,7 @@ img {
       &-icon {
         border-radius: 50%;
         background: $dark-color;
-        color: #fff;
+        color: set-text-color($dark-color);
         padding: 2rem;
         width: 70px;
         height: 70px;
@@ -192,6 +193,7 @@ img {
 
         &:hover {
           background: $main-color;
+          color: set-text-color($main-color);
           width: 90px;
           height: 90px;
           line-height: 90px;
@@ -200,6 +202,37 @@ img {
             background: $dark-color;
           }
         }
+      }
+    }
+  }
+}
+
+// Footer
+#main-footer {
+  background: $dark-color;
+  color: #fff;
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+
+    .social .fab {
+      margin-right: 1rem;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+
+      &:hover {
+        background: $main-color;
+        color: $dark-color;
+        transition: all 0.2s ease-in-out;
       }
     }
   }
